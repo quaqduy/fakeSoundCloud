@@ -1,0 +1,524 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    #main {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #header {
+        padding-right: 8px;
+        padding-top: 10px;
+        height: 200%;
+        background: URL(https://a-v2.sndcdn.com/assets/images/sc_landing_header_web_featured_artists-8081257b.jpg);
+    }
+    
+    #header-top-left a {
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-left: 10px;
+    }
+    
+    #header-top-left a:hover {
+        text-decoration: none;
+    }
+    
+    #header-top-right>div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    #header-top-right>div>button,
+    #header-top-right>div>a {
+        margin-left: 8px;
+    }
+    
+    #header-top-right>div>button {
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 100%;
+        border-radius: 5px;
+    }
+    
+    #header-top-right>div #btn1 {
+        background: black;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.555);
+    }
+    
+    #header-top-right>div #btn1:hover {
+        border: 1px solid white;
+    }
+    
+    #header-top-right>div #btn2 {
+        background: rgb(255, 102, 0);
+        color: white;
+        border: 1px solid rgb(255, 102, 0);
+        outline: none;
+    }
+    
+    #forCreate {
+        text-decoration: none;
+        color: white;
+    }
+    
+    #forCreate:hover {
+        color: white;
+    }
+    
+    #header-bottom .box {
+        text-align: center;
+        color: white;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    
+    .box #btn3 {
+        padding: 5px 30px 5px 30px;
+        color: white;
+        background-color: rgb(255, 102, 0);
+        border: 1px solid rgb(255, 102, 0);
+        border-radius: 5px;
+    }
+    /* -------------signInForm----------------- */
+    
+    .itemMusic>.itemFloat {
+        width: 153.3px;
+    }
+    
+    #background-onclick {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background: white;
+        opacity: 0.8;
+        padding-top: 10%;
+        z-index: 3;
+        display: none;
+        height: 100%;
+    }
+    
+    #signIn-box {
+        top: -80%;
+        padding: 3% 2% 3% 2%;
+        background-color: white;
+        width: 25%;
+        position: absolute;
+        left: 37.5%;
+        z-index: 4;
+        transition: top 1s;
+    }
+    
+    #or {
+        margin-top: 25px;
+        border-top: 1px solid black;
+    }
+    
+    #or p {
+        display: absolute;
+        margin-top: -15px;
+        margin-left: 45%;
+        z-index: 5;
+        background: white;
+        width: 40px;
+        text-align: center;
+    }
+    
+    #signIn-box {
+        border: 1px solid rgb(185, 178, 178);
+    }
+    
+    #signIn input {
+        display: block;
+        width: 100%;
+        margin: 0px 0px 15px 0px;
+        height: 30px;
+        padding-left: 5px;
+        border: 1px solid rgb(189, 181, 181);
+        border-radius: 5px;
+    }
+    
+    #signIn>div {
+        margin-top: 15px;
+    }
+    
+    #signIn div a {
+        display: inline-block;
+        margin-left: 78%;
+    }
+    /* ---------------------Body--------------------- */
+    
+    #body-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+    }
+    
+    #body-head input {
+        width: 600px;
+        margin: 0px 15px;
+        height: 46px;
+        border: 1px solid #ebe7e7;
+        background: #ebe7e7;
+        border-radius: 5px;
+        outline: none;
+        padding-left: 8px;
+    }
+    
+    #body-head button {
+        height: 42px;
+        width: 35px;
+        border: 0.2px solid #ebe7e7;
+        border-radius: 10px;
+        background: #ebe7e7;
+        margin-left: -60px;
+        margin-right: 30px;
+    }
+    
+    #searchBtn {
+        outline: none;
+    }
+    
+    #body-head #text {
+        margin-right: 16px;
+    }
+    
+    #body-head .Upload {
+        width: 168.95px;
+        height: 46px;
+        background: rgb(255, 102, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #body-head .Upload a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 46px;
+    }
+    
+    #body-container h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 5% 0px;
+    }
+    
+    #body-container .itemMusic {
+        position: relative;
+    }
+    
+    #body-container .itemMusic img {
+        height: 153.31px;
+        width: : 153.31px;
+        z-index: 1;
+    }
+    
+    #body-container .itemMusic>div>a {
+        text-decoration: none;
+        color: rgb(163, 158, 158);
+        font-size: 13px;
+    }
+    
+    #body-container .itemMusic .imgHover .playBtn {
+        height: 153.31px;
+        width: 153.31px;
+        margin-top: -153.31px;
+        display: none;
+        text-shadow: 0px 0px 3px gray;
+    }
+    
+    #body-container .itemMusic .imgHover .playBtn a {
+        text-decoration: none;
+        color: rgb(255, 102, 0);
+        font-size: 3.5rem;
+        display: inline-block;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        text-shadow: 0px 0px 2px gray;
+        z-index: 2;
+        position: absolute;
+        margin: 38px 45px;
+    }
+    
+    .optionBox {
+        height: 30px;
+        width: 70px;
+        position: absolute;
+        z-index: 4;
+        margin-top: -31px;
+        margin-left: 78px;
+        color: white;
+        display: none;
+    }
+    
+    .optionBox i {
+        margin: 0px 3px;
+        text-shadow: 0px 0px 3px white;
+    }
+    
+    .optionBox .more {
+        display: flex;
+        position: absolute;
+        top: 3px;
+        left: 58px;
+    }
+    
+    .optionBox .unfollow {
+        position: absolute;
+        top: 3px;
+        left: 27px;
+        display: none;
+    }
+    
+    .optionBox .follow {
+        display: block;
+        top: 3px;
+        left: 27px;
+        position: absolute;
+    }
+    
+    #body-container .itemMusic img:hover {
+        cursor: pointer;
+    }
+    
+    .heart:hover {
+        cursor: pointer;
+    }
+    
+    .follow:hover {
+        cursor: pointer;
+    }
+    
+    .follow:active {
+        color: yellow;
+    }
+    
+    .moreSubList {
+        position: absolute;
+        width: 141.22px;
+        height: 192px;
+        background: rgb(231, 229, 229);
+        top: 16px;
+        display: none;
+    }
+    
+    .moreSubList li {
+        list-style-type: none;
+        padding-left: 0px;
+        height: 32px;
+        line-height: 32px;
+        border: 1px solid gray;
+        font-size: 12px;
+    }
+    
+    .moreSubList li a {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding-left: 8px;
+    }
+    
+    .moreSubList li :hover {
+        background: rgb(148, 147, 147);
+    }
+    
+    .checkHeart {
+        display: none;
+    }
+    
+    .explore--playlists {
+        width: 100%;
+        display: flex;
+    }
+    
+    .explore--playlists .btn--exploreTrending {
+        margin: auto;
+        padding: 50px 0px;
+    }
+    
+    .explore--playlists .btn--exploreTrending #btnExplore {
+        padding: 6px 18px;
+        border: none;
+        color: white;
+        background: rgb(255, 102, 0);
+        border-radius: 3px;
+        outline: none;
+    }
+    
+    .container {
+        background: white;
+    }
+    
+    #main {
+        background: #f2f2f2;
+    }
+    
+    #lastPart_body {
+        padding-top: 50px;
+        width: 110%;
+        display: flex;
+        background: #f2f2f2;
+        margin-left: -15px;
+        flex-wrap: wrap;
+    }
+    
+    #lastPart_body>.device {
+        background-image: url(https://a-v2.sndcdn.com/assets/images/never_stop_listening@1x-9c5264ff.jpg);
+        background-repeat: no-repeat;
+        flex: 2;
+        height: 390px;
+    }
+    
+    #lastPart_body>.dowload {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 0.9;
+    }
+    
+    #lastPart_body>.dowload>div {
+        background: black;
+        padding: 5px;
+        display: flex;
+        width: 160px;
+        justify-content: space-between;
+        border-radius: 5px;
+    }
+    
+    #lastPart_body>.dowload>div>a {
+        diplay: block;
+        color: white;
+    }
+    
+    .iconDevice {
+        font-size: 2rem;
+    }
+    
+    .sharing {
+        background-image: url(https://a-v2.sndcdn.com/assets/images/hp_creator_image_featured_artists-798050ae.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1143px;
+        margin-left: -16px;
+        color: white;
+        height: 350px;
+    }
+    
+    .sharing .infBox {
+        width: 50%;
+        padding-left: 30px;
+        padding-top: 100px;
+    }
+    
+    .sharing .infBox p {
+        font-size: 1.5rem;
+    }
+    
+    .sharing .infBox button {
+        background: black;
+        color: white;
+        padding: 6px 15px;
+        border: 0.8px solid white;
+        border-radius: 3px;
+        out-line: none;
+    }
+    /* ================footer================== */
+    
+    #footer {
+        padding-top: 50px;
+        border-bottom: 1px solid gray;
+        padding-bottom: 30px;
+    }
+    
+    #footer .flexBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 60%;
+    }
+    
+    #footer>.p1,
+    .p2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    #footer #createAcc {
+        background: rgb(255, 102, 0);
+        color: white;
+        padding: 8px 25px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        margin: auto;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    p+button {
+        margin-left: 15px;
+    }
+    
+    #footer .flexBox>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #footer .flexBox>div>p {
+        padding-top: 6%;
+    }
+    
+    #footer .flexBox>div>button {
+        padding: 3px 15px;
+        border: 0.8px solid rgb(228, 220, 220);
+    }
+    
+    #contactFooter {
+        padding-bottom: 50px;
+    }
+    
+    #contactFooter ul {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.8rem;
+    }
+    
+    #contactFooter ul li {
+        padding-left: 10px;
+        margin-right: 3px;
+    }
+    
+    #li1 {
+        list-style-type: none;
+    }
+    
+    #contactFooter ul li a {
+        color: gray;
+        text-decoration: none;
+    }

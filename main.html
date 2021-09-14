@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<script src='./main.js'>
+    $(document).ready(function {
+        $('#signIn').addClass('animated bounce')
+    })
+</script>
+
+<body>
+    <div id="main">
+        <div id="header" class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="header-top" class="row">
+                        <div id='header-top-left' class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <a href='#' id='logo'><i id='soundcloud-logo' class="fab fa-soundcloud"> soundcloud</i></a>
+                        </div>
+                        <div id='header-top-right' class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+                            <div>
+                                <button id='btn1' type="button">Sign in</button>
+                                <button id='btn2' type="button">Create account</button>
+                                <a id='forCreate' href="#">For Creators</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="header-bottom" class="row">
+                        <div class="box col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div>
+                                <h1>Connect on SoundCloud</h1>
+                                <p>Discover, stream, and share a constantly expanding mix of music<br> from emerging and major artists around the world.</p>
+                                <button type="button" id="btn3">Sign up for free</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="body" class='container'>
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="body-head">
+                        <input type="text" name='search' placeholder="Search for artists, bands, tracks, podcasts">
+                        <button type='button' id='searchBtn'><i class="fas fa-search"></i></button>
+                        <div id='text'>or</div>
+                        <div class='Upload'>
+                            <a href="#">Upload your own</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="body-container" class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div>
+                                <h1>Hear what’s trending for free in the SoundCloud community</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check1' type="checkbox" name='check1'>
+                                <img src="https://i1.sndcdn.com/artworks-452wzhRszLjTliyf-YYAOxQ-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check1"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check2' type="checkbox" name='check2'>
+                                <img src="https://i1.sndcdn.com/artworks-NYF6yrfQVQuVdwyr-1bgBQw-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check2"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check3' type="checkbox" name='check3'>
+                                <img src="https://i1.sndcdn.com/artworks-iB78i5DhK0zIJEV1-bAMQsg-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check3"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check4' type="checkbox" name='check4'>
+                                <img src="https://i1.sndcdn.com/artworks-TtzTGeUEVoe24RQu-R3rXBg-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check4"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check5' type="checkbox" name='check5'>
+                                <img src="https://i1.sndcdn.com/artworks-Qve5y3Fy9VLOyLQi-3mukjA-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check5"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check6' type="checkbox" name='check6'>
+                                <img src="https://i1.sndcdn.com/artworks-ZXS6yBAbTsRTtIwg-5YAtpg-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check6"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check7' type="checkbox" name='check7'>
+                                <img src="https://i1.sndcdn.com/artworks-kzv3iR159KimiFBj-gN7vrw-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check7"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check8' type="checkbox" name='check8'>
+                                <img src="https://i1.sndcdn.com/artworks-000024473517-jt59il-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check8"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check9' type="checkbox" name='check9'>
+                                <img src="https://i1.sndcdn.com/artworks-o6XasJcFEg0zAwEN-uX7zBg-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check9"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check10' type="checkbox" name='check10'>
+                                <img src="https://i1.sndcdn.com/artworks-pb74fCyoWkyuXG85-oPmQlw-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check10"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check11' type="checkbox" name='check11'>
+                                <img src="https://i1.sndcdn.com/artworks-RLqwbMbME1pCJDqA-Miy38w-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check11"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                        <div class="itemMusic col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                            <div class='itemFloat'>
+                                <input class='checkHeart' id='check12' type="checkbox" name='check12'>
+                                <img src="https://i1.sndcdn.com/artworks-uWUIVz0LWs5AjO4F-9ZnAMQ-t200x200.jpg" alt="">
+                                <div class='imgHover'>
+                                    <div class='playBtn'>
+                                        <a id='play' href=""><i class="far fa-play-circle"></i></a>
+                                    </div>
+                                    <div class='optionBox'>
+                                        <label for="check12"><i class="heart fas fa-heart"></i></label>
+                                        <i class="follow fas fa-user-plus"></i>
+                                        <i class="unfollow fas fa-user-times"></i>
+                                        <div class='more'><i class="moreBtn fas fa-caret-down"></i>
+                                            <ul class='moreSubList'>
+                                                <li>
+                                                    <a href="">Report</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">share</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Copy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Next up</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Add to Playlist</a>
+                                                </li>
+                                                <li>
+                                                    <a href="">Station</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="">GPS - NIDEBIG ft BINQ...</a>
+                                <a href="">yafu</a>
+                                <div class="background-itemMusic-onclick"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contauner">
+                        <div class="explore--playlists">
+                            <div class="btn--exploreTrending">
+                                <button type="button" id='btnExplore'>Explore trending playslists</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id='lastPart_body' class="container">
+                        <div class='device'></div>
+                        <div class='dowload'>
+                            <div>
+                                <a class='iconDevice' href=""><i class="fab fa-apple"></i></a>
+                                <a class='btn--dowload' href="">Download on the <b>AppStore</b></a>
+                            </div>
+                            <div>
+                                <a class='iconDevice' href=""><i class="fab fa-google-play"></i></a>
+                                <a class='btn--dowload' href="">GET IT ON <b>Google Play</b></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sharing">
+                        <div class='infBox'>
+                            <p>Calling all creators</p>
+                            <p>Get on SoundCloud to connect with fans, share your sounds, and grow your audience. What are you waiting for?</p>
+                            <button type="button">Find out more</button>
+                        </div>
+                    </div>
+                    <div id="footer">
+                        <p class='p1'>Thanks for listening. Now join in.</p>
+                        <p class='p2'>Save tracks, follow artists and build playlists. All for free.</p>
+                        <div class='flexBox'>
+                            <button type="button" id="createAcc">Create account</button>
+                            <div>
+                                <p>Already have an account?</p>
+                                <button type="button">Sign in</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contactFooter">
+                        <ul>
+                            <li id='li1'> <a href="">Directory</a></li>
+                            <li> <a href="">About us</a></li>
+                            <li> <a href="">Creator Resources</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li> <a href="">Jobs</a></li>
+                            <li> <a href="">Developers</a></li>
+                            <li> <a href="">Help</a></li>
+                            <li> <a href="">Legal</a></li>
+                            <li> <a href="">Privacy</a></li>
+                            <li> <a href="">Cookie Policy</a></li>
+                            <li> <a href="">Cookie Manager</a></li>
+                            <li> <a href="">Imprint</a></li>
+                            <li> <a href="">Charts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="background-onclick"></div>
+    <div id='signIn-box'>
+        <form id='signIn' action="">
+            <button type="button" class="btn btn-primary btn-block">Continue with Facebook</button>
+            <button type="button" class="btn btn-block">Continue with Google</button>
+            <button type="button" class="btn btn-block btn-dark">Continue with Apple</button>
+            <div id='or'>
+                <p>or</p>
+            </div>
+            <input type="email" placeholder="Your email address or profile URL">
+            <button type="button" class="btn btn-block btn-danger">Continue</button>
+            <div class="link"><a href="">Need help?</a></div>
+            <p>We may use your email and devices for updates and tips on SoundCloud's products and services, and for activities notifications. You can unsubscribe for free at any time in your notification settings</p>
+            <p>We may use information you provide us in order to show you targeted ads as described in our <a href="#">Privacy Policy</a>.</p>
+        </form>
+    </div>
+
+</body>
+
+</html>
