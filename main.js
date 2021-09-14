@@ -21,7 +21,7 @@ window.onload = function() {
         const listBtn = document.querySelectorAll('#footer button');
         listBtn.forEach((btn, index) => {
             btn.addEventListener('click', () => {
-                signInBox.style.top = '10%';
+                signInBox.style.top = '160%';
                 backgroundOnclick.style.display = 'block';
             })
         })
